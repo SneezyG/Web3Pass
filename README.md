@@ -30,14 +30,14 @@ The frontend prompts the user to connect their wallet and sign a login challenge
 ---
 
 ## ⚙️ Technology Stack  
-| Layer          | Technology         |
-|----------------|--------------------|
-| Frontend       | HTML, JavaScript, Ethers.js |
-| Wallet Provider| MetaMask (EIP-1193) |
-| Backend        | Node.js, Express.js |
-| Auth Tokens    | JSON Web Token (JWT) |
-| Signature Tools| Ethers.js (server & client) |
-| Message Signing| Ethereum ECDSA (`signMessage`) |
+| Layer            | Technology                          |
+|------------------|-------------------------------------|
+| Frontend         | HTML, JavaScript, `ethers.js`       |
+| Wallet Provider  | MetaMask (EIP-1193)                 |
+| Backend          | Node.js, Express.js                 |
+| Auth Tokens      | JSON Web Token (JWT)                |
+| Signature Tools  | `ethers.js` (server & client)       |
+| Message Signing  | Ethereum ECDSA (`signMessage`)      |
 
 ---
 
