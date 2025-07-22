@@ -1,4 +1,4 @@
-# 🔐 Web3Pass: An Ethereum based login system using MetaMask
+# 🔐 Web3Pass: An Ethereum based login system
 
 A decentralized login system that enables users to authenticate securely using their Ethereum wallet (e.g., MetaMask) by signing cryptographic messages. It verifies signatures server-side and returns a JWT token for protected API access — without requiring usernames or passwords.
 
