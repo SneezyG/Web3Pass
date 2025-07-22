@@ -1,12 +1,12 @@
-#🔐 Web3Pass: A Web3 Wallet Authentication System  
+# 🔐 Web3Pass: A Web3 Wallet Authentication System  
 
 A decentralized login system that enables users to authenticate securely using their Ethereum wallet (e.g., MetaMask) by signing cryptographic messages. It verifies signatures server-side and returns a JWT token for protected API access — without requiring usernames or passwords.
 
-##[See MetaAuth Code Repo](https://github.com/SneezyG/Web3Pass)
+## [See Web3Pass Code Repo](https://github.com/SneezyG/Web3Pass)
 
 ---
 
-##🚀 Key Features  
+## 🚀 Key Features  
 - **Wallet-Based Login**: Authenticate users through wallet signatures (Sign-In with Ethereum).
 - **Signature Verification**: Securely validate the signed message and address on the server.
 - **JWT Token Issuance**: Return time-limited JWT tokens for stateless session handling.
@@ -15,7 +15,7 @@ A decentralized login system that enables users to authenticate securely using t
 
 ---
 
-##📍 Use Cases  
+## 📍 Use Cases  
 - **dApp Login Systems**: Replace traditional login flows in decentralized apps.
 - **DAO Membership Gates**: Restrict features or dashboards to verified wallet holders.
 - **NFT Platform Access**: Gate NFT management or minting behind verified identity.
@@ -24,12 +24,12 @@ A decentralized login system that enables users to authenticate securely using t
 
 ---
 
-##🧠 Architecture  
+## 🧠 Architecture  
 The frontend prompts the user to connect their wallet and sign a login challenge. That message and its signature are sent to a Node.js backend. The server verifies the signature using Ethers.js and issues a JWT token. Protected routes use this token for access control, maintaining a secure session without passwords.
 
 ---
 
-##⚙️ Technology Stack  
+## ⚙️ Technology Stack  
 | Layer          | Technology         |
 |----------------|--------------------|
 | Frontend       | HTML, JavaScript, Ethers.js |
@@ -41,7 +41,7 @@ The frontend prompts the user to connect their wallet and sign a login challenge
 
 ---
 
-##🔌 API Endpoints  
+## 🔌 API Endpoints  
 
 **POST /login**  
 - Accepts: `{ address, message, signature }`  
@@ -53,7 +53,7 @@ The frontend prompts the user to connect their wallet and sign a login challenge
 
 ---
 
-##📦 Authentication Logic  
+## 📦 Authentication Logic  
 1. The frontend calls `eth_requestAccounts` to request wallet access.
 2. A login message (with timestamp or nonce) is signed by the user.
 3. The backend uses `ethers.utils.verifyMessage()` to recover the signing address.
@@ -62,7 +62,7 @@ The frontend prompts the user to connect their wallet and sign a login challenge
 
 ---
 
-##🛡️ Notes  
+## 🛡️ Notes  
 - MetaMask must be installed in the browser to use this system.
 - Signing does not expose the user's private key — only wallet ownership is proven.
 - JWT tokens can be stored in localStorage, cookies, or memory based on your app needs.
